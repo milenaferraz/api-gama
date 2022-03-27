@@ -1,0 +1,14 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+version: "3.4"
+
+services:
+  myapi:
+    container_name: api-gama
+    image: api-gama
+    environment:
+      - PORT=5001
+    ports:
+      - 5000:5001
+    build:
+      context: .
+      dockerfile: Dockerfile
