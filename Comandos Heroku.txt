@@ -1,6 +1,6 @@
-heroku logs --tail -a automotivaprimus-backend
+heroku logs --tail -a api-gama
 
-heroku container:release web -a automotivaprimus-backend
+heroku container:release web -a api-gama
 
-heroku container:push web -a automotivaprimus-backend
+heroku container:push web -a api-gama
 
